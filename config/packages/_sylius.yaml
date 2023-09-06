@@ -19,6 +19,7 @@ sylius_product:
         product:
             classes:
                 model: App\Entity\Product\Product
+                interface: App\Entity\Product\ProductInterface
 
 sylius_shop:
     product_grid:
