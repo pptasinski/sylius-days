@@ -1,0 +1,7 @@
+sylius_ui:
+    events:
+        sylius.shop.product.show.right_sidebar:
+            blocks:
+                product_is_on_sale:
+                    template: 'shop/product/is_on_sale.html.twig'
+                    priority: 45
