@@ -14,7 +14,7 @@ class Product extends BaseProduct implements ProductInterface
     #[ORM\Column(name: 'is_on_sale', type: 'boolean')]
     protected bool $isOnSale = false;
 
-    public function isOnSale(): bool
+    public function getIsOnSale(): bool
     {
         return $this->isOnSale;
     }

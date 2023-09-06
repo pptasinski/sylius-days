@@ -8,7 +8,7 @@ use Sylius\Component\Core\Model\ProductInterface as CoreProductInterface;
 
 interface ProductInterface extends CoreProductInterface
 {
-    public function isOnSale(): bool;
+    public function getIsOnSale(): bool;
 
     public function setIsOnSale(bool $isOnSale): void;
 }
