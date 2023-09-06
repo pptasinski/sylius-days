@@ -5,3 +5,18 @@ sylius_admin:
 sylius_paypal_admin:
     resource: "@SyliusPayPalPlugin/Resources/config/admin_routing.yml"
     prefix: '/%sylius_admin.path_name%'
+
+app_admin_supplier:
+    resource: |
+        alias: app.term
+        section: admin
+        templates: "@SyliusAdmin\\Crud"
+        redirect: update
+        grid: app_admin_term
+        vars:
+            all:
+                subheader: app.ui.term
+            index:
+                icon: 'file image outline'
+    type: sylius.resource
+    prefix: '/%sylius_admin.path_name%'

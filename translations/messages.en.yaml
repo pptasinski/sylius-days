@@ -1,3 +1,8 @@
+app:
+    ui:
+        terms: Terms
+        term: Term
+        new_term: New term
 sylius:
     form:
         product:
@@ -5,7 +10,6 @@ sylius:
     ui:
         product:
             is_on_sale: This product is on sale!
-
     admin:
         product:
             is_on_sale: Is on sale?
