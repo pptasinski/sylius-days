@@ -1,0 +1,9 @@
+winzou_state_machine:
+    sylius_product_review:
+        callbacks:
+            after:
+                sylius_log_product_review_approval:
+                    on: ["accept"]
+                    do: ["@App\\Core\\Product\\Logger\\ProductReviewLogger", "logApproval"]
+                    args: ["object"]
+                    priority: -100
